@@ -33,10 +33,6 @@ describe("colorShuffler", () => {
     expect(colors1).toEqual(expect.arrayContaining(expected1));
     expect(colors2).toEqual(expect.arrayContaining(expected2));
   });
-  it("will fail if the first element is included", () => {
-    expect(colors1).not.toEqual(expect.arrayContaining("purple"));
-    expect(colors2).not.toEqual(expect.arrayContaining("chartreuse"));
-  });
 });
 
 const colorShuffler = (array) => {
